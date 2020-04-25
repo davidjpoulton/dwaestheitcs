@@ -1,46 +1,66 @@
+// selecting different review sections
 let reviews1 = document.querySelector(".review-slide1")
 let reviews2 = document.querySelector(".review-slide2")
 let reviews3 = document.querySelector(".review-slide3")
-
+// to check what the opacity is set too
 let style1 = window.getComputedStyle(reviews1);
 let style2 = window.getComputedStyle(reviews2);
 let style3 = window.getComputedStyle(reviews3);
-
-
-let rightArrow = document.querySelector("#arrow-right")
-let leftArrow = document.querySelector("#arrow-left")
-
-rightArrow.addEventListener(onmouseover, enlarge());
+// selecting the ball elements
+let ball1 = document.querySelector(".ball1");
+let ball2 = document.querySelector(".ball2");
+let ball3 = document.querySelector(".ball3");
 
 
 function swipeRight() {
+    // if the first review is showing (opacity: 1)
     if (style1.opacity === "1") {
         reviews1.classList.add("hide");
         reviews1.classList.remove("show");
         reviews1.classList.add("slide-left");
         reviews2.classList.add("show");
+        reviews2.classList.add("slide-back");
+        reviews2.classList.remove("slide-right");
+        ball2.style.background = "#52C7C7";
+        ball1.style.background = "#979797";
         
+        // if the second review is showing
     } else if (style2.opacity === "1") {
         reviews2.classList.remove("show")
-        reviews1.classList.add("hide")
+        reviews1.classList.remove("show")
         reviews3.classList.add("show")
+        reviews3.classList.add("slide-back")
+        reviews3.classList.remove("slide-right")
+        reviews2.classList.add("slide-left")
+        reviews2.classList.remove("slide-back")
+        ball3.style.background = "#52C7C7";
+        ball2.style.background = "#979797";
     }
 }
 
 function swipeLeft() {
+    // if third review is being shown
     if (style3.opacity === "1") {
         reviews3.classList.remove("show");
         reviews2.classList.add("show");
+        reviews2.classList.remove("slide-left");
+        reviews2.classList.add("slide-back");
+        reviews3.classList.add("slide-right");
+        ball2.style.background = "#52C7C7";
+        ball3.style.background = "#979797";
+    // if second review is being shown
     } else if (style2.opacity === "1") {
         reviews2.classList.remove("show");
-        reviews1.classList.add("show");
+        reviews1.classList.remove("hide");
         reviews1.classList.remove("slide-left")
+        reviews2.classList.add("slide-right")
+        reviews2.classList.remove("slide-back")
+        ball1.style.background = "#52C7C7";
+        ball2.style.background = "#979797";
+    
     }
 }
 
-function enlarge() {
-
-}
 
 
 
