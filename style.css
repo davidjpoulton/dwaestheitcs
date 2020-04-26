@@ -717,3 +717,300 @@ footer section {
     height: auto;
     cursor: pointer;
 }
+
+/*ANTI WRIKNLE PAGE */
+/*------------------------------*/
+
+.anti-wrinkle-container {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.anti-wrinkle-banner {
+    width: 40%;
+    height: auto;
+    right: 0;
+}
+
+.anti-wrinkle-header {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    margin-top: 70px;
+}
+
+.anti-wrinkle-text-container p {
+    font-size: 1.1vw;
+    font-weight: 500;
+    letter-spacing: .4px;
+}
+
+.anti-wrinkle-text-container {
+    margin-left: 80px;
+    width: 53%;
+    position: relative;
+    z-index: 160;
+}
+
+.treatment-areas-header {
+    width: 27%;
+    margin-left: 75px;
+    margin-top: 100px;
+}
+
+.treatment-container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    margin-top: 45px;
+}
+.treatment-areas-sub {
+    margin-left: 80px;
+    width: 75%;
+    font-size: 1.1vw;
+    font-weight: 500;
+    letter-spacing: .4px;
+}
+
+.treatment-box {
+    width: 250px;
+    height: 60px;
+    background-color: rgba(82, 199, 199, 0.308);
+    margin: 10px 20px;
+    border: none;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.225em;
+    color: #4B4B4B;
+}
+
+.treatment-overview {
+    width: 30%;
+    margin-left: 80px;
+    margin-top: 100px;
+}
+
+.see-prices-button {
+    display: flex;
+    width: 250px;
+    justify-content: center;
+    height: 60px;
+    background-color: rgb(82, 199, 199);
+    margin: 60px auto;
+    border: none;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 6px;
+    color: #4B4B4B;
+}
+
+/*DERMAL PAGE */
+
+.dermal-header {
+    width: 60%;
+    height: auto;
+    margin-bottom: 50px;
+    margin-top: 70px;
+}
+
+/* LIP PAGE */
+
+.lip-banner {
+    position: absolute;
+    width: 55%;
+    height: auto;
+    right: 0;
+    z-index: 140;
+}
+
+.lip-header {
+    width: 70%;
+    height: auto;
+    margin-bottom: 50px;
+    margin-top: 70px;
+}
+
+.before-after-header {
+    width:50%;
+    margin-left: 75px;
+    margin-top: 170px;
+}
+
+.before-after-img {
+    margin-left: 65px;
+    margin-top: 50px;
+    width: 70%;
+    height: auto;
+}
+
+/* BOOK PAGE */
+/*----------------------*/
+
+.book-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("imgs/book-banner.jpg");
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.book-container h3 {
+    position: absolute;
+    top: 60px;
+    left: 70px;
+    font-family: "Dancing Script";
+    font-weight: lighter;
+    font-size: 30px;
+    color: #979797;
+    transform: rotate(-5deg);
+}
+
+.book-container h1 {
+    position: absolute;
+    top: 105px;
+    left: 150px;
+    font-family: "Yeseva One";
+    font-size: 50px;
+    color: #52C7C7;
+    font-weight: 500;
+}
+
+.book-form {
+    position: absolute;
+    top: 220px;
+    left: 150px;
+    width: 550px;
+    height: 380px;
+}
+
+.book-form p {
+    font-family: "Raleway";
+    font-weight: 600;
+    letter-spacing: 6px;
+}
+
+.book-form input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: rgba(104, 199, 199, 0.856);
+    font-weight: 600;
+    font-family: "Raleway";
+    padding-left: 10px;
+    letter-spacing: .5px;
+    font-size: 16px;
+    
+}
+
+.form-half-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-half-box input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 260px;
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+#message-input {
+    height: 150px;
+    width: 550px;
+    resize: none;
+    border: none;
+    background-color: rgba(104, 199, 199, 0.856);
+    font-family: "Raleway";
+    letter-spacing: .5px;
+    font-weight: 600;
+    color: black;
+    padding: 10px 0 0 10px;
+    font-size: 16px;
+
+}
+
+#message-input::placeholder {
+    color: rgb(32, 32, 32);
+    text-align: center;
+    font-weight: 600;
+}
+
+.form-button {
+    border: none;
+    height: 40px;
+    width: 180px;
+    display: flex;
+    background-color: rgba(104, 199, 199, 0.856);
+    font-family: "Raleway";
+    font-weight: 600;
+    letter-spacing: 6px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.form-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.fb-ig-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20%;
+    flex-wrap: wrap;
+}
+
+.fb-ig-container h1 {
+    font-family: "Raleway";
+    font-size: 2.2em;
+    letter-spacing: 7px;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.booking-other-section {
+    margin: 70px 0;
+}
+
+.booking-other-title{
+    display: flex;
+    justify-content: center;
+    font-family: "Raleway";
+    font-size: 2.4vw;
+    letter-spacing: 7px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+    color: #52C7C7;
+}
+
+.booking-button {
+    height: 55px;
+    width: 250px;
+    background-color: rgba(104, 199, 199, 0.856);
+    border: none;
+    cursor: pointer;
+    font-family: "Raleway";
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: lighter;
+}
