@@ -25,6 +25,11 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    transition: all .3s ease;
+}
+
+.navbar:hover {
+    background-color: #52C7C7;
 }
 
 .navbar ul {
@@ -49,7 +54,25 @@ a {
 
 .navbar ul li a:hover {
     color: black;
-    border-bottom: 2px solid white;
+}
+
+.navbar:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    visibility: hidden;
+    transform: scale(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+
+.navbar:hover:before {
+    visibility: visible;
+    transform: scale(1);
 }
 
 .icons-container{
@@ -470,17 +493,13 @@ a {
     transform: translateX(400px);
 }
 
-.toggle-green {
-    background-color: ;
-}
-
 #review-toggle {
     position: absolute;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-evenly;
-    bottom: 50px;
+    bottom: 70px;
     left: 200px;
     width: 500px;
     height: 100px;
@@ -744,11 +763,53 @@ footer section {
     transition: all .2s ease;
 }
 
-#treatments-container div {
+.image:hover > div{
+    opacity: .8;
 }
 
-.image:hover > div{
-    opacity: .5;
+.image:hover > img{
+    zoom: 5%;
+}
+
+.overlay p {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 1.1em;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: 2px solid white;
+    position: relative;
+    left: 50%;
+    margin-left: -27px;
+    opacity: .9;
+}
+
+.circle div:nth-child(1){
+    height: 2px;
+    width: 22px;
+    background-color: white;
+    transform: rotate(30deg);
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    border-radius: 20px;
+}
+
+.circle div:nth-child(2){
+    height: 2px;
+    width: 22px;
+    background-color: white;
+    transform: rotate(-30deg);
+    position: absolute;
+    top: 29px;
+    left: 16px;
+    border-radius: 20px;
+
 }
 
 
@@ -898,8 +959,14 @@ footer section {
     background-repeat: no-repeat;
 }
 
-.book-container h3 {
+.form-container {
     position: absolute;
+    left:2%;
+    top: 1vh;
+}
+
+.book-container h3 {
+    position: relative;
     top: 60px;
     left: 70px;
     font-family: "Dancing Script";
@@ -910,8 +977,8 @@ footer section {
 }
 
 .book-container h1 {
-    position: absolute;
-    top: 105px;
+    position: relative;
+    top: 50px;
     left: 150px;
     font-family: "Yeseva One";
     font-size: 50px;
@@ -930,6 +997,7 @@ footer section {
 .book-form p {
     font-family: "Raleway";
     font-weight: 600;
+    font-size: .8em;
     letter-spacing: 6px;
 }
 
@@ -940,7 +1008,6 @@ footer section {
     background-color: rgba(104, 199, 199, 0.856);
     font-weight: 600;
     font-family: "Raleway";
-    padding-left: 10px;
     letter-spacing: .5px;
     font-size: 16px;
     
@@ -950,6 +1017,7 @@ footer section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 550px;
 }
 
 .form-half-box input{
@@ -971,9 +1039,8 @@ footer section {
     letter-spacing: .5px;
     font-weight: 600;
     color: black;
-    padding: 10px 0 0 10px;
     font-size: 16px;
-
+    padding-top: 10px;
 }
 
 #message-input::placeholder {
