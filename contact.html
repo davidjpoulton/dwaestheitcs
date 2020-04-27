@@ -11,7 +11,7 @@
     <!--facebook intergration-->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0"></script>
-    <!--Navigation bar-->
+
     <nav class="navbar">
         <ul>
             <li>
@@ -37,48 +37,26 @@
         </div>
     </nav>
 
-    <section class="anti-wrinkle-container">
-        <div class="anti-wrinkle-text-container">
-            <img class="anti-wrinkle-header" src="imgs/anti-wrinkle-header.png" alt="">
-            <p>Our injection treatments are subtle skin enhancements that will keep everyone guessing why you look so well.</p>
-            <p>When you entrust something as precious as your face to someone, you’ll want to know that you’re in the best, safest hands. All injection treatments require a medical consultation prior to treatment. </p>
-            <p>  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+    <section class="contact-banner"></section>
+
+    <main class="contact-main">
+        <div class="contact-content">
+            <h1>CONTACT DETAILS</h1>
+            <div class="address-box">
+                <p>DW Aesthetics</p>
+                <p>Spruce Hill</p>
+                <p>Harlow</p>
+                <p>ESSEX</p>
+                <p>CM18 7RS</p>
+            </div>
+            <p>EMAIL: dwaesthetics@outlook.live</p>
+            <h2>TO LEAVE US A MESSAGE OR INQUIRE ABOUT A TREATMENT
+                PLEASE USE OUR <a href="book.html"><b>ONLINE FORM</b></a></h2>
         </div>
-        <img class="anti-wrinkle-banner" src="imgs/anti-wrinkle-injection1.jpg" alt="">
-    </section>
+        <div id="map"></div>
+    </main>
 
-    <img class="treatment-areas-header" src="imgs/treatment-areas.png" alt="">
-    <p class="treatment-areas-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatibus recusandae asperiores ducimus quis repudiandae! Labore aut, commodi nostrum id sit totam porro inventore ducimus asperiores dolorem, soluta excepturi laudantium? Lorem ipsum dolor sit amet consectetur, adipisicing elit..</p>
-    <section class="treatment-container">
-        <div>
-            <button class="treatment-box">Crow’s Feet</button>
-            <button class="treatment-box">Forehead Lines</button>
-            <button class="treatment-box">Laugh Lines</button>
-            <button class="treatment-box">Tear Trough</button>
-            <button class="treatment-box">Bunny Lines</button>
-            <button class="treatment-box">Jaw Sculpting</button>
-            <button class="treatment-box">Neck Lines</button>
-            <button class="treatment-box">Cheek Volume</button>
-            <button class="treatment-box">Marrionette Lines</button>
-            <button class="treatment-box">Frown Lines</button>
-            <button class="treatment-box">Brow Lines</button>
-            <button class="treatment-box">Mouth Frown</button>
-        </div>
-    </section>
-
-    <img class="treatment-overview" src="imgs/treatment-overview.png" alt="">
-    <p class="treatment-areas-sub">When you entrust something as precious as your face to someone, you’ll want to know that you’re in the best, safest hands – We implore you not to just go for the cheapest botox or for Botox deals. Therefore when it comes to such a precision skill as cosmetic injectable’s we have selected the best, evidence-based toxins available, and we are a top recommended clinic that administer botulinum toxin injections. Rest assured at Facial Aesthetics Essex your safety is of utmost importance, we only use products licenced by the United States Food and Drugs Administration (FDA) where there is stringent testing of licenced Botox® Anti Wrinkle treatments  can combat both fine lines and deep wrinkles. This treatment  reduces wrinkles and expression lines between the eyebrows and around the eye area. There are currently two different types of botulinum toxin available in the UK – type A toxin (including the brands Botox®, Vistabel®, Dysport®, Azzalure® and Xeomin® and Bocouture®) and type B toxin (Neurobloc®).
-    </p>
-
-    <button class="see-prices-button">SEE PRICES</button>
-
-    <section class="book-banner">
-        <h1 class="book-title">BOOK AN APPOINTMENT WITH US</h1>
-        <button class="book-button">
-            <p>BOOK NOW</p>
-        <img class="hand" src="imgs/hand.png" alt="">
-        </button>
-    </section>
+    
 
     <footer>
         <section>
@@ -136,5 +114,23 @@
         </div>
         <p id="footer-note">Spruce Hill, CM18 7SR Harlow, Essex | Copyright 2020</p>
     </footer>
+
+    <script>
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 51.7458, lng:  0.1016},
+            zoom: 14
+          }); 
+
+
+          var marker = new google.maps.Marker({
+              position:{lat: 51.7458, lng:0.1016},
+              map:map
+          })
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaA_Dm6O7kFbOO8NqzRSHz35M9AoY60GI&callback=initMap"
+      async defer></script>
 </body>
 </html>
