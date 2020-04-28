@@ -52,10 +52,12 @@ a {
     letter-spacing: 1px;
     transition: all .2s ease;
     padding-bottom: 3px;
+    cursor: pointer;
 }
 
 .navbar ul li a:hover {
     color: black;
+
 }
 
 .navbar:before {
@@ -88,13 +90,112 @@ a {
     padding: 10px;
 }
 
+/* BURGER MENU */
+/*-----------------------*/
+
+.burger-menu {
+    position: absolute;
+    left: 30px;
+    width: 45px;
+    height: 60px;
+    top: 8px;
+    cursor: pointer;
+    display: none;
+}
+
+.burger-menu div {
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.slide-menu {
+    position: relative;
+    top: 20px;
+    left: -100px;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    border-right: 2px solid #4B4B4B;
+    font-weight: normal;
+    transition: all .3s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.slide-menu-right {
+    left: -30px;
+}
+
+.dark {
+    opacity: .5;
+    transition: all .2s ease;
+}
+
+.slide-menu ul  {
+    position: relative;
+    left: -90px;
+    padding-left: 30px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.slide-menu ul li a:hover  {
+    border-bottom: 2px solid #4B4B4B;
+}
+
+.slide-links li {
+    padding: 20px 0;
+    width: 100%;
+}
+
+.slide-menu ul li a {
+    color: black;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.slide-menu-social h3{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #52C7C7;
+    padding-bottom: 0;
+    margin-top: 40px;
+    
+}
+
+.slide-menu-social li {
+    padding: 5px 0;
+    width: 100%;
+}
+
+.slide-menu-social-icon {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.slide-menu-social-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.slide-menu-social-icon p  {
+   padding: 5px 0 0 10px;
+   font-size: 12px;
+}
+
 #landing {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 110;
     width: 100%;
-    height: 1080px;
+    height: 100vh;
     background-attachment: fixed;
     background-image: url("imgs/banner.png");
     background-size: cover;
@@ -153,7 +254,6 @@ a {
 .main {
     position: relative;
     width: 100%;
-    height: 950px;
     margin-top: 100vh;
     background-color: rgb(254, 254, 254);
     z-index: 190;
@@ -163,11 +263,11 @@ a {
 
 #welcome {
     height: 700px;
-    width: 100%;
+    width: 100%;    
 }
 
 #welcome-butterfly {
-    position: relative;
+    position: absolute;
     top: 30px;
     left: 40px;
     width: 40px;
@@ -187,7 +287,7 @@ a {
     left: 70px;
     font-family: "Dancing Script";
     font-weight: lighter;
-    font-size: 55px;
+    font-size: 50px;
     color: #979797;
     transform: rotate(-5deg);
 }
@@ -201,6 +301,8 @@ a {
 }
 
 #DW {
+    position: relative;
+    top: -15px;
     font-family: "Yeseva One";
     font-size: 72px;
     color: #52C7C7;
@@ -249,6 +351,7 @@ a {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #view-treatments {
@@ -280,8 +383,14 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: 125;
+}
+
+#promotion h1 {
+    position: fixed;
+    text-transform: uppercase;
+    color: white;
 }
 
 #reviews {
@@ -483,6 +592,7 @@ a {
 
 .show {
     opacity: 1;
+    visibility: visible;
 }
 
 .slide-left {
@@ -709,7 +819,7 @@ footer section {
     width: 100%;
     background-attachment: fixed;
     background-image: url("imgs/treatments-banner.png");
-    background-size: contain;
+    background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
 }
@@ -1187,9 +1297,35 @@ footer section {
 
 /* RESPONSIVE PAGES/ MEDIA QUERIES */
 
-@media only screen and (max-width: 850px) {
+.tablet-logo {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 50%;
+    margin-left: -131px;
+    white-space: nowrap;
+    display: none;
+}
 
-    .navbar ul {
+.tablet-logo h1 {
+    font-family: "Yeseva One";
+    font-size: 43px;
+}
+
+.tablet-logo h2 {
+    font-family: "Forum";
+    font-size: 40px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1025px) {
+
+    .mobile-hide {
+        display: none;
+    }
+
+    .nav-links {
         visibility: hidden;
     }
 
@@ -1197,6 +1333,105 @@ footer section {
         top: -20px;
     }
 
+    .tablet-logo {
+        display: block;
+    }
 
+    .icons-container {
+        display: flex;
+        right: 20px;
+    }
 
+    .icons-container img{
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    #view-treatments-container{
+        height: 170px;
+    }
+    
+    
+    #view-treatments-container button {
+        margin-bottom: 40px;
+    }
+
+    .button {
+        width: 25%;
+        left: 80px;
+        top: 550px;
+    }
+
+    .logo {
+        position: fixed;
+        top: 90px;
+        left: 80px;
+        width: 139px;
+        height: 127px;
+        z-index: 100;
+    }
+
+    #landing {
+        background-image: url("imgs/landing-tablet.png");
+        background-size: contain;
+    }
+
+    #welcome {
+        height: 400px;
+    }
+
+    .main {
+        margin-top: 58vh;
+    }
+
+    #welcome-lips{
+        position: absolute;
+        right: 0;
+        width: 500px;
+        height: 400px;
+        opacity: .2;
+    }
+
+    #welcome-title {
+        top: 40px;
+        left: 80px;
+    }
+
+    #welcome-underline {
+        left: 80px;
+        top: 175px;
+    }
+
+    #welcome-text {
+        left: 80px;
+        top: 190px;
+        font-size: .9em;
+    }
+
+    .main h3 {
+        font-size: 36px;
+        top: 10px;
+        left: 50px;
+    }
+
+    #welcome-butterfly {
+        left: 20px;
+        top: 20px;
+    }
+
+    #promotion {
+        background-size: cover;
+        background-image: url("imgs/promotion-tablet.png");
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .button {
+        top: 430px;
+    }
 }

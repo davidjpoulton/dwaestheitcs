@@ -1,3 +1,6 @@
+
+//This is the clickable slider on the review section of the home page
+
 // selecting different review sections
 let reviews1 = document.querySelector(".review-slide1")
 let reviews2 = document.querySelector(".review-slide2")
@@ -10,7 +13,6 @@ let style3 = window.getComputedStyle(reviews3);
 let ball1 = document.querySelector(".ball1");
 let ball2 = document.querySelector(".ball2");
 let ball3 = document.querySelector(".ball3");
-
 
 function swipeRight() {
     // if the first review is showing (opacity: 1)
@@ -60,6 +62,37 @@ function swipeLeft() {
     
     }
 }
+
+
+
+// Burger menu 
+
+let burger = document.querySelector(".burger-menu");
+let slideMenu = document.querySelector(".slide-menu");
+let page = document.querySelector(".page");
+
+let menuOpacity = window.getComputedStyle(slideMenu);
+
+function toggleMenu() {
+    if (menuOpacity.opacity === "0") {
+        slideMenu.classList.add("show");
+        slideMenu.classList.remove("hide");
+        slideMenu.classList.add("slide-menu-right");
+        page.classList.add("dark");
+    } else if (menuOpacity.opacity === "1") {
+        slideMenu.classList.add("hide");
+        slideMenu.classList.remove("show");
+        slideMenu.classList.remove("slide-menu-right");
+        page.classList.remove("dark");
+    }
+}
+
+
+// Animated scroll arrow 
+
+
+
+
 
 
 
