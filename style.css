@@ -1301,11 +1301,12 @@ footer section {
     color: white;
     display: flex;
     flex-direction: row;
+    align-items: baseline;
     position: absolute;
     left: 50%;
     margin-left: -131px;
     white-space: nowrap;
-    display: none;
+    visibility: hidden;
 }
 
 .tablet-logo h1 {
@@ -1317,6 +1318,15 @@ footer section {
     font-family: "Forum";
     font-size: 40px;
     font-weight: 500;
+    margin-left: 10px;
+}
+
+.sparkle {
+    position: relative;
+    top: 0px;
+    height: 50px;
+    width: 20px;
+    transform: rotate(-10deg);
 }
 
 @media only screen and (max-width: 1025px) {
@@ -1334,7 +1344,7 @@ footer section {
     }
 
     .tablet-logo {
-        display: block;
+        visibility: visible;
     }
 
     .icons-container {
@@ -1428,10 +1438,25 @@ footer section {
         background-size: cover;
         background-image: url("imgs/promotion-tablet.png");
     }
+
+    .reviews-cover {
+        background-image: url("imgs/reviews-tablet.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .button {
         top: 430px;
+    }
+
+    #review-toggle {
+        width: 300px;
+        left: 50%;
+        margin-left: -150px;
     }
 }
