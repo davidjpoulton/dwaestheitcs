@@ -94,6 +94,15 @@ function toggleMenu() {
     }
 }
 
+function burgerBackground() {
+    if (document.body.scrollTop === "0"){
+        burger.style.background = "rgba(255, 255, 255, 0);"
+    } else {
+        burger.style.background = "white";
+    }
+}
+
+
 
 // Animated scroll arrow 
 
