@@ -279,9 +279,9 @@ a {
 #home-arrow-mobile {
     position: absolute;
     left: 50%;
-    margin-left: -21px;
-    width: 42px;
-    height: 26px;
+    margin-left: -51px;
+    width: 102px;
+    height: 66px;
     z-index: 200;
     display: block;
 }
