@@ -119,7 +119,7 @@ a {
     top: 4px;
     left: -100px;
     width: 300px;
-    height: 110vh;
+    height: 100vh;
     background-color: white;
     border-right: 2px solid #4B4B4B;
     font-weight: normal;
@@ -1414,10 +1414,6 @@ footer section {
         left: 50px;
     }
 
-    #welcome-butterfly {
-        left: 20px;
-        top: 20px;
-    }
 
     #promotion {
         background-size: cover;
@@ -1482,19 +1478,28 @@ footer section {
     .review-slide3 p {
         font-size: 2.3vw;
     }
+
+    
     
     #welcome-underline {
-        width: 280px;
+        width: 70%;
         top: 160px;
+        left: 20px;
     }
 
     #welcome-text {
-        width: 80%;
+        width: 90%;
+        top: 170px;
+        left: 20px;
     }
 
     #welcome-title {
         top: 80px;
-        left: 80px;
+        left: 20px;
+    }
+
+    #view-treatments-container button {
+        margin-bottom: 10px;
     }
 
     #DW {
@@ -1565,6 +1570,119 @@ footer section {
 
     .button img {
         display: none;
+    }
+
+    #welcome-butterfly {
+        position: absolute;
+        top: 30px;
+        left: 110px;
+        width: 20px;
+        height: 20px;
+    }
+
+    #welcome h3 {
+        transform: rotate(0);
+        font-size: 22px;
+        top: 20px;
+        left: 10px;
+    }
+
+    #welcome-underline {
+        width: 70%;
+        top: 130px;
+        left: 20px;
+    }
+
+    #welcome-text {
+        width: 90%;
+        top: 140px;
+        left: 20px;
+    }
+
+    #welcome-title {
+        top: 50px;
+        left: 20px;
+    }
+
+    #view-treatments-container button {
+        margin-bottom: 10px;
+    }
+
+    #DW {
+        font-size: 43px;
+    }
+    #aesthetics {
+        font-size: 40px;
+    }
+
+    #promotion {
+        background-image: url("imgs/mobile-promotion.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+    }
+
+    #reviews-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }    
+
+    #reviews-container h3 {
+        font-size: 26px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+
+    #customer-reviews {
+        font-size: 8vw;
+        margin: 0 auto 90px;
+        white-space: nowrap;
+    }
+
+    .review-slide1 {
+        left: 30px;
+        width: 90%;
+    }
+
+    .review-slide1 p {
+        font-size: 18px;
+    }
+
+    .review-slide1 h4 {
+        font-size: 22px;
+        top: 190px;
+    }
+
+    .review-slide2 {
+        left: 30px;
+        width: 90%;
+    }
+
+    .review-slide2 p {
+        font-size: 18px;
+    }
+
+    .review-slide2 h4 {
+        font-size: 22px;
+        top: 190px;
+    }
+
+    .review-slide3 {
+        left: 30px;
+        width: 90%;
+    }
+
+    .review-slide3 p {
+        font-size: 18px;
+    }
+
+    .review-slide3 h4 {
+        font-size: 22px;
+        top: 190px;
+    }
+    #review-toggle {
+        bottom: 20px;
     }
 
 
