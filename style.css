@@ -1700,6 +1700,8 @@ footer section {
     }
     #review-toggle {
         bottom: 20px;
+        width: 400px;
+        margin-left: -200px;
     }
 
     .book-title {
