@@ -102,6 +102,12 @@ a {
     cursor: pointer;
     display: none;
     z-index: 300;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .burger-menu div {
@@ -112,6 +118,12 @@ a {
     margin-top: 7px;
     border-radius: 5px;
     z-index: 300;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .slide-menu {
@@ -127,6 +139,12 @@ a {
     visibility: hidden;
     opacity: 0;
     z-index: 200;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .slide-menu-right {
@@ -1510,6 +1528,7 @@ footer section {
     }
     #aesthetics {
         font-size: 40px;
+        color: black;
     }
 }
 
@@ -1588,6 +1607,7 @@ footer section {
         font-size: 22px;
         top: 20px;
         left: 10px;
+        color: black;
     }
 
     #welcome-underline {
@@ -1600,6 +1620,9 @@ footer section {
         width: 90%;
         top: 140px;
         left: 20px;
+    }
+    #welcome-text p {
+        font-size: 16px;
     }
 
     #welcome-title {
