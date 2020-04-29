@@ -13,47 +13,6 @@
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0"></script>
     <!--Navigation bar-->
     <nav class="navbar">
-        <div class="burger-menu"  onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-            <section class="slide-menu">
-                <ul class="slide-links">
-                    <li>
-                        <a href=""><b>Home</b></a>
-                    </li>
-                    <li>
-                        <a href="">Treatments</a>
-                    </li>
-                    <li>
-                        <a href="">price list</a>
-                    </li>
-                    <li>
-                        <a href="">Book Appointment</a>
-                    </li>
-                    <li>
-                        <a href="">Contact Us</a>
-                    </li>
-                </ul>
-                <ul class="slide-menu-social">
-                    <li>
-                        <h3>Find Us On:</h3>
-                    </li>
-                    <li class="slide-menu-social-icon">
-                        <img src="imgs/facebook-black.png" alt="">
-                        <a href="">
-                            <p>Facebook</p>
-                        </a>
-                    </li>
-                    <li class="slide-menu-social-icon">
-                        <img class="slide-menu-social-icon" src="imgs/instagram-black.png" alt="">
-                        <a href="">
-                            <p>Instagram</p>
-                        </a>
-                    </li>
-                </ul>              
-            </section>
-        </div>
         <div class="tablet-logo">
             <h1>DW</h1> 
             <h2>Aesthetics</h2>
@@ -83,16 +42,61 @@
         </div>
     </nav>
 
+    <div class="burger-menu"  onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+        <section class="slide-menu">
+            <ul class="slide-links">
+                <li>
+                    <a href=""><b>Home</b></a>
+                </li>
+                <li>
+                    <a href="">Treatments</a>
+                </li>
+                <li>
+                    <a href="">price list</a>
+                </li>
+                <li>
+                    <a href="">Book Appointment</a>
+                </li>
+                <li>
+                    <a href="">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="slide-menu-social">
+                <li>
+                    <h3>Find Us On:</h3>
+                </li>
+                <li class="slide-menu-social-icon">
+                    <img src="imgs/facebook-black.png" alt="">
+                    <a href="">
+                        <p>Facebook</p>
+                    </a>
+                </li>
+                <li class="slide-menu-social-icon">
+                    <img class="slide-menu-social-icon" src="imgs/instagram-black.png" alt="">
+                    <a href="">
+                        <p>Instagram</p>
+                    </a>
+                </li>
+            </ul>    
+            <img class="burger-logo" src="imgs/logo.png" alt="">          
+        </section>
+    </div>
+
     <section class="page">
         <section id="landing">
             <a href="book.html">
                 <button class="button">
-                    <p>BOOK NOW</p>
+                    <p>BOOK AN APPOINTMENT</p>
                     <img src="imgs/arrowright.png" alt="">
                 </button>  
             </a>
-            <img id="home-arrow" src="imgs/arrowdowngrey.png" alt="">
         </section>
+        <img id="home-arrow-desktop" src="imgs/arrowdowngrey.png" alt="">
+        <img id="home-arrow-mobile" src="imgs/arrowupgreen.png" alt="">
+
     
         <main class="main">
             <section id="welcome">
@@ -143,21 +147,22 @@
                     <h1 id="customer-reviews">Customer Reviews</h1> 
                 </div>
                 <section class="review-slide1">
-                    <p>Donna is always professional and gives great information/guidance in regards to all your treatments. </p>
+                    <p><span class="start-quote">"</span>Donna is always professional and gives great information/guidance in regards to all your treatments. </p>
                     
-                    <p class="end-quote">I always come away very happy with amazing results.</p>
+                    <p>I always come away very happy with amazing results.<span class="end-quote">"</span></p>
         
                     <h4>CHEL</h4>
                 </section>
                 <section class="review-slide2">
-                    <p>Brilliant lady, Amazing results from my filler and Botox. </p>
+                    <p><span class="start-quote">"</span>Brilliant lady, amazing results from my filler and botox. <span class="end-quote2">"</span></p>
                     
+        
                     <h4>CHAR</h4>
                 </section>
                 <section class="review-slide3">
-                    <p>Iv'e been coming to Donna for years and she always does a fantastic job, very proffesional.</p>
+                    <p><span class="start-quote">"</span> Iv'e been coming to Donna for years and she always does a fantastic job, very proffesional.</p>
         
-                    <p>I would highly recomend to anyone thinking about it.</p>
+                    <p>I would highly recomend to anyone thinking about it. <span class="end-quote">"</span></p>
         
                     <h4>CHLOE</h4>
                 </section>

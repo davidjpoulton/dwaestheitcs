@@ -94,35 +94,39 @@ a {
 /*-----------------------*/
 
 .burger-menu {
-    position: absolute;
+    position: fixed;
     left: 30px;
-    width: 45px;
+    width: 41px;
     height: 60px;
-    top: 8px;
+    top: 12px;
     cursor: pointer;
     display: none;
+    z-index: 300;
 }
 
 .burger-menu div {
-    height: 4px;
+    position: relative;
+    height: 6px;
     width: 100%;
     background-color: white;
-    margin-top: 10px;
-    border-radius: 10px;
+    margin-top: 7px;
+    border-radius: 5px;
+    z-index: 300;
 }
 
 .slide-menu {
     position: relative;
-    top: 20px;
+    top: 4px;
     left: -100px;
     width: 300px;
-    height: 100vh;
+    height: 110vh;
     background-color: white;
     border-right: 2px solid #4B4B4B;
     font-weight: normal;
     transition: all .3s ease;
     visibility: hidden;
     opacity: 0;
+    z-index: 200;
 }
 
 .slide-menu-right {
@@ -136,7 +140,6 @@ a {
 
 .slide-menu ul  {
     position: relative;
-    left: -90px;
     padding-left: 30px;
     top: 20px;
     display: flex;
@@ -157,6 +160,8 @@ a {
     color: black;
     letter-spacing: 3px;
     font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .slide-menu-social h3{
@@ -189,8 +194,17 @@ a {
    font-size: 12px;
 }
 
+.burger-logo {
+    position: relative;
+    width: 119px;
+    height: 117px;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: 5px;
+}
+
 #landing {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 110;
@@ -202,23 +216,14 @@ a {
     background-repeat: no-repeat;
 }
 
-.logo {
-    position: fixed;
-    top: 90px;
-    left: 130px;
-    width: 199px;
-    height: 187px;
-    z-index: 100;
-}
-
 .button {
-    position: fixed;
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    width: 15%;
-    height: 50px;
+    width: 20%;
+    height: 60px;
     left: 130px;
     top: 570px;
     background: rgba(82, 199, 199, 0.61);
@@ -233,7 +238,8 @@ a {
 
 .button p {
     margin: 0 0 0 20px;
-    
+    white-space: nowrap;
+    font-size: 14px;
 }
 
 .button img {
@@ -242,13 +248,24 @@ a {
     margin-left: 10px;
 }
 
-#home-arrow {
-    position: relative;
+#home-arrow-desktop {
+    position: absolute;
     left: 50%;
-    top: 93vh;
+    top: 91vh;
     margin-left: -26px;
     width: 52px;
     height: 33px;
+    z-index: 200;
+}
+
+#home-arrow-mobile {
+    position: absolute;
+    left: 50%;
+    margin-left: -21px;
+    width: 42px;
+    height: 26px;
+    z-index: 200;
+    display: block;
 }
 
 .main {
@@ -445,17 +462,16 @@ a {
 
 .review-slide1 p {
     font-family: "Raleway";
-    font-size: 1.2em;
+    font-size: 1.3vw;
     font-style: italic;
     letter-spacing: .5px;
 }
 
-.review-slide1:before {
+.start-quote {
     position: absolute;
     top: -30px;
-    left: -35px;
-    font-family: "Raleway";
-    font-size: 100px;
+    left: -40px;
+    font-size: 90px;
     line-height: 1;
     content: "\201C";
     color: #52C7C7;
@@ -463,16 +479,20 @@ a {
 
 .end-quote {
     position: relative;
-    top: -20px;
-    white-space: nowrap;
-}
-
-.end-quote:after {
-    position: relative;
-    left: 0px;
-    top: 50px;
+    left: -10px;
+    top: 40px;
     font-family: "Raleway";
-    font-size: 100px;
+    font-size: 90px;
+    line-height: 1;
+    content: "\201D";
+    color: #52C7C7;
+}
+.end-quote2 {
+    position: relative;
+    left: -10px;
+    top: -30px;
+    font-family: "Raleway";
+    font-size: 90px;
     line-height: 1;
     content: "\201D";
     color: #52C7C7;
@@ -486,6 +506,7 @@ a {
     font-weight: bold;
     font-size: 2.5vw;
 }
+
 .review-slide2 {
     position: absolute;
     height: 300px;
@@ -494,13 +515,15 @@ a {
     top: 197px;
     left: 100px;
     transition: all 1s ease;
-    transform: translateX(100px);
+    transform: translateX(-100px);
     opacity: 0;
+    visibility: hidden;
 }
 
 .review-slide2 p {
+    display: flex;
     font-family: "Raleway";
-    font-size: 1.1em;
+    font-size: 1.3vw;
     font-style: italic;
     letter-spacing: .5px;
 }
@@ -511,30 +534,9 @@ a {
     font-family: "Raleway";
     letter-spacing: 5px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 2.5vw;
 }
 
-.review-slide2:before {
-    position: absolute;
-    top: -10px;
-    left: -35px;
-    font-family: "Raleway";
-    font-size: 100px;
-    line-height: 1;
-    content: "\201C";
-    color: #52C7C7;
-}
-
-.review-slide2:after {
-    position: absolute;
-    left: 470px;
-    top: -10px;
-    font-family: "Raleway";
-    font-size: 100px;
-    line-height: 1;
-    content: "\201D";
-    color: #52C7C7;
-}
 .review-slide3 {
     position: absolute;
     height: 300px;
@@ -543,38 +545,16 @@ a {
     top: 197px;
     left: 100px;
     transition: all 1s ease;
-    transition: all 1s ease;
-    transform: translateX(100px);
+    transform: translateX(-100px);
     opacity: 0;
+    visibility: hidden;
 }
 
 .review-slide3 p {
     font-family: "Raleway";
-    font-size: 1.1em;
+    font-size: 1.3vw;
     font-style: italic;
     letter-spacing: .5px;
-}
-
-.review-slide3:before {
-    position: absolute;
-    top: -10px;
-    left: -35px;
-    font-family: "Raleway";
-    font-size: 100px;
-    line-height: 1;
-    content: "\201C";
-    color: #52C7C7;
-}
-
-.review-slide3:after {
-    position: absolute;
-    left: 450px;
-    top: 50px;
-    font-family: "Raleway";
-    font-size: 100px;
-    line-height: 1;
-    content: "\201D";
-    color: #52C7C7;
 }
 
 .review-slide3 h4 {
@@ -583,11 +563,12 @@ a {
     font-family: "Raleway";
     letter-spacing: 5px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 2.5vw;
 }
 
 .hide {
     opacity: 0;
+    visibility: hidden;
 }
 
 .show {
@@ -634,12 +615,15 @@ a {
     padding: 10px;
     cursor: pointer;
     transition: all 1s ease;
+    border: solid 2px #979797;
+
 }
 
 .ball2 {
     width: 20px;
     height: 20px;
     border-radius: 100%;
+    border: solid 2px #979797;
     background-color: #979797;
     padding: 10px;
     cursor: pointer;
@@ -654,7 +638,7 @@ a {
     padding: 10px;
     cursor: pointer;
     transition: all 1s ease;
-
+    border: solid 2px #979797;
 }
 
 .book-banner {
@@ -665,6 +649,7 @@ a {
     width: 100%;
     height: 180px;
     background-color: rgb(101, 204, 204);
+    flex-wrap: wrap;
 }
 
 .book-title {
@@ -1447,11 +1432,33 @@ footer section {
         width: 100%;
         height: auto;
     }
-}
 
-@media only screen and (max-width: 768px) {
-    .button {
-        top: 430px;
+    .book-title {
+        font-size: 22px;
+    }
+
+    .review-slide1 {
+        width: 80%;   
+    }
+
+    .review-slide2 {
+        width: 80%;   
+    }
+
+    .review-slide3 {
+        width: 80%;   
+    }
+
+    .review-slide1 p {
+        font-size: 2vw;
+    }
+
+    .review-slide2 p {
+        font-size: 2vw;
+    }
+
+    .review-slide3 p {
+        font-size: 2vw;
     }
 
     #review-toggle {
@@ -1459,4 +1466,107 @@ footer section {
         left: 50%;
         margin-left: -150px;
     }
+}
+
+@media only screen and (max-width: 768px) {
+    .button {
+        top: 430px;
+    }
+
+    .review-slide1 p {
+        font-size: 2.3vw;
+    }
+    .review-slide2 p {
+        font-size: 2.3vw;
+    }
+    .review-slide3 p {
+        font-size: 2.3vw;
+    }
+    
+    #welcome-underline {
+        width: 280px;
+        top: 160px;
+    }
+
+    #welcome-text {
+        width: 80%;
+    }
+
+    #welcome-title {
+        top: 80px;
+        left: 80px;
+    }
+
+    #DW {
+        font-size: 43px;
+    }
+    #aesthetics {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    
+    .navbar {
+        display: none;
+    }
+
+    .icons-container {
+        display: none;
+    }
+
+    .burger-menu {
+        left: 20px;
+    }
+
+    .burger-menu div {
+        background-color: #8BDADA;
+    }
+
+    .slide-menu {
+        top: -67px;
+        width: 250px;
+    }
+
+    .slide-links {
+        padding-top: 70px;
+    }
+
+    #home-arrow-desktop {
+        display: none
+    }
+
+    #home-arrow-mobile {
+        display: block;
+        top: 56vh;
+    }
+
+    #landing {
+        background-image: url("imgs/mobile-banner.png");
+    }
+
+    .main {
+        margin-top: 60vh;
+    }
+
+    .button {
+        top: 335px;
+        width: 330px;
+        height: 73px;
+        left: 50%;
+        margin-left: -175px;
+        background-color: rgba(255, 255, 255, 0.89);
+        color: black;
+        border: 1px solid black;
+    }
+    .button p {
+        margin: 0;
+    }
+
+    .button img {
+        display: none;
+    }
+
+
+    
 }

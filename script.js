@@ -22,7 +22,6 @@ function swipeRight() {
         reviews1.classList.add("slide-left");
         reviews2.classList.add("show");
         reviews2.classList.add("slide-back");
-        reviews2.classList.remove("slide-right");
         ball2.style.background = "#52C7C7";
         ball1.style.background = "#979797";
         
@@ -32,7 +31,6 @@ function swipeRight() {
         reviews1.classList.remove("show")
         reviews3.classList.add("show")
         reviews3.classList.add("slide-back")
-        reviews3.classList.remove("slide-right")
         reviews2.classList.add("slide-left")
         reviews2.classList.remove("slide-back")
         ball3.style.background = "#52C7C7";
@@ -47,7 +45,7 @@ function swipeLeft() {
         reviews2.classList.add("show");
         reviews2.classList.remove("slide-left");
         reviews2.classList.add("slide-back");
-        reviews3.classList.add("slide-right");
+        reviews3.classList.remove("slide-back");
         ball2.style.background = "#52C7C7";
         ball3.style.background = "#979797";
     // if second review is being shown
@@ -55,7 +53,7 @@ function swipeLeft() {
         reviews2.classList.remove("show");
         reviews1.classList.remove("hide");
         reviews1.classList.remove("slide-left")
-        reviews2.classList.add("slide-right")
+        reviews2.classList.add("slide-back")
         reviews2.classList.remove("slide-back")
         ball1.style.background = "#52C7C7";
         ball2.style.background = "#979797";
