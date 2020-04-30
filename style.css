@@ -957,6 +957,11 @@ footer section {
     position: relative;
     z-index: 160;
 }
+.anti-wrinkle-banner-tablet {
+    width: 100%;
+    height: auto;
+    display: none;
+}
 
 .treatment-areas-header {
     width: 27%;
@@ -1319,7 +1324,7 @@ footer section {
     transform: rotate(-10deg);
 }
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1366px) {
 
 
     .navbar {
@@ -1496,6 +1501,49 @@ footer section {
     .book-title {
         margin-bottom: 0;
     }
+
+    .anti-wrinkle-banner {
+       display: none;
+    }
+
+    .anti-wrinkle-banner-tablet {
+        display: block;
+    }
+
+    .anti-wrinkle-container {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .anti-wrinkle-text-container {
+        margin-top: 50px;
+        width: 80%;
+        position: relative;
+        z-index: 160;
+    }
+
+    .anti-wrinkle-text-container p{
+        font-size: 16px;
+    }
+
+    .treatment-areas-header {
+        width: 40%;
+    }
+
+    .treatment-areas-sub {
+        font-size: 16px;
+    }
+
+    .treatment-overview {
+        width: 50%;
+    }
+
+    .lip-banner {
+        display: none;
+    }
+    
 }
 
 @media only screen and (max-width: 768px) {
@@ -1551,9 +1599,6 @@ footer section {
     #treatments-cover {
         background-image: url("imgs/treatments-tablet.png");
         background-size: contain;
-    }
-
-    .treatments-main {
     }
 }
 
@@ -1792,6 +1837,55 @@ footer section {
 
     .image {
         width: 100%;
+    }
+
+    .anti-wrinkle-text-container {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .anti-wrinkle-header {
+        width: 90%;
+        margin-top: 0;
+    }
+
+    .anti-wrinkle-text-container p{
+        margin: 0 auto;
+        width: 90%;   
+        font-size: 16px;
+        letter-spacing: px;
+    }
+
+    .treatment-container {
+        display: none;
+    }
+
+    .treatment-areas-sub {
+        display: none;
+    }
+
+    .treatment-areas-header {
+        display: none;
+    }
+
+    .treatment-overview {
+        display: none;
+    }
+
+    .before-after-header {
+        display: none;
+    }
+    .before-after-img {
+        display: none;
+    }
+
+    .lip-header {
+        margin-top: 0;
+    }
+
+    .dermal-header {
+        margin-top: 0;
     }
 }
 

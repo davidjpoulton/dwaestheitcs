@@ -13,7 +13,12 @@
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0"></script>
     <!--Navigation bar-->
     <nav class="navbar">
-        <ul>
+        <div class="tablet-logo">
+            <h1>DW</h1> 
+            <h2>Aesthetics</h2>
+            <img class="sparkle" src="imgs/sparkle.png" alt="">
+        </div>
+        <ul class="nav-links">
             <li>
                 <a href="treatments.html">Treatments</a>
             </li>
@@ -37,14 +42,58 @@
         </div>
     </nav>
 
+    <div class="burger-menu" onclick="toggleMenu()">
+        <div class="burger-div1"></div>
+        <div class="burger-div2"></div>
+        <div class="burger-div3"></div>
+        <section class="slide-menu">
+            <ul class="slide-links">
+                <li>
+                    <a href="index.html"><b>Home</b></a>
+                </li>
+                <li>
+                    <a href="treatments.html">Treatments</a>
+                </li>
+                <li>
+                    <a href="price-list.html">price list</a>
+                </li>
+                <li>
+                    <a href="book.html">Book Appointment</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="slide-menu-social">
+                <li>
+                    <h3>Find Us On:</h3>
+                </li>
+                <li class="slide-menu-social-icon">
+                    <img src="imgs/facebook-black.png" alt="">
+                    <a href="https://www.facebook.com/dwaesthetics11-110152467024493/">
+                        <p>Facebook</p>
+                    </a>
+                </li>
+                <li class="slide-menu-social-icon">
+                    <img class="slide-menu-social-icon" src="imgs/instagram-black.png" alt="">
+                    <a href="https://www.instagram.com/dwaesthetics11/">
+                        <p>Instagram</p>
+                    </a>
+                </li>
+            </ul>    
+            <img class="burger-logo" src="imgs/logo.png" alt="">          
+        </section>
+    </div>
+
     <section class="anti-wrinkle-container">
         <div class="anti-wrinkle-text-container">
             <img class="anti-wrinkle-header" src="imgs/anti-wrinkle-header.png" alt="">
             <p>Our injection treatments are subtle skin enhancements that will keep everyone guessing why you look so well.</p>
-            <p>When you entrust something as precious as your face to someone, you’ll want to know that you’re in the best, safest hands. All injection treatments require a medical consultation prior to treatment. </p>
-            <p>  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            <p class="mobile-hide">When you entrust something as precious as your face to someone, you’ll want to know that you’re in the best, safest hands. All injection treatments require a medical consultation prior to treatment. </p>
+            <p >  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
         </div>
         <img class="anti-wrinkle-banner" src="imgs/anti-wrinkle-injection1.jpg" alt="">
+        <img class="anti-wrinkle-banner-tablet" src="imgs/tablet-anti-wrinkle.png" alt="">
     </section>
 
     <img class="treatment-areas-header" src="imgs/treatment-areas.png" alt="">
@@ -186,5 +235,7 @@
         </div>
         <p id="footer-note">Spruce Hill, CM18 7SR Harlow, Essex | Copyright 2020</p>
     </footer>
+
+    <script src="burger.js"></script>
 </body>
 </html>

@@ -13,7 +13,12 @@
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0"></script>
     <!--Navigation bar-->
     <nav class="navbar">
-        <ul>
+        <div class="tablet-logo">
+            <h1>DW</h1> 
+            <h2>Aesthetics</h2>
+            <img class="sparkle" src="imgs/sparkle.png" alt="">
+        </div>
+        <ul class="nav-links">
             <li>
                 <a href="treatments.html">Treatments</a>
             </li>
@@ -37,6 +42,49 @@
         </div>
     </nav>
 
+    <div class="burger-menu" onclick="toggleMenu()">
+        <div class="burger-div1"></div>
+        <div class="burger-div2"></div>
+        <div class="burger-div3"></div>
+        <section class="slide-menu">
+            <ul class="slide-links">
+                <li>
+                    <a href="index.html"><b>Home</b></a>
+                </li>
+                <li>
+                    <a href="treatments.html">Treatments</a>
+                </li>
+                <li>
+                    <a href="price-list.html">price list</a>
+                </li>
+                <li>
+                    <a href="book.html">Book Appointment</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="slide-menu-social">
+                <li>
+                    <h3>Find Us On:</h3>
+                </li>
+                <li class="slide-menu-social-icon">
+                    <img src="imgs/facebook-black.png" alt="">
+                    <a href="https://www.facebook.com/dwaesthetics11-110152467024493/">
+                        <p>Facebook</p>
+                    </a>
+                </li>
+                <li class="slide-menu-social-icon">
+                    <img class="slide-menu-social-icon" src="imgs/instagram-black.png" alt="">
+                    <a href="https://www.instagram.com/dwaesthetics11/">
+                        <p>Instagram</p>
+                    </a>
+                </li>
+            </ul>    
+            <img class="burger-logo" src="imgs/logo.png" alt="">          
+        </section>
+    </div>
+
     <section class="anti-wrinkle-container">
         <div class="anti-wrinkle-text-container">
             <img class="lip-header" src="imgs/lip-header.png" alt="">
@@ -47,6 +95,7 @@
             <p> Experts argue over when we start losing collagen, but the generally agreed age is 25. Pretty young, right? Your collagen and elastin levels then decline at a rate of about 2% per year, and your body will have stopped producing it altogether by your late twenties.</p>
         </div>
         <img class="lip-banner" src="imgs/lip-banner.png" alt="">
+        <img class="anti-wrinkle-banner-tablet" src="imgs/tablet-lip.png" alt="">
     </section>
 
     <img class="before-after-header" src="imgs/before-after.png" alt="">
@@ -173,5 +222,7 @@
         </div>
         <p id="footer-note">Spruce Hill, CM18 7SR Harlow, Essex | Copyright 2020</p>
     </footer>
+
+    <script src="burger.js"></script>
 </body>
 </html>
