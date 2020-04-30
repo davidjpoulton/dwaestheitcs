@@ -95,12 +95,14 @@ function toggleMenu() {
 }
 
 function burgerBackground() {
-    if (document.body.scrollTop === "0"){
-        burger.style.background = "rgba(255, 255, 255, 0);"
+    if (document.documentElement.scrollTop === 0){
+        burger.style.background = "rgb(255, 255, 255, 0)";
     } else {
-        burger.style.background = "white";
+        burger.style.background = "rgb(255, 255, 255)";
     }
 }
+
+
 
 
 
