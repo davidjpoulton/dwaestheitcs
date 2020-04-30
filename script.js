@@ -74,6 +74,8 @@ let burgerDiv3 = document.querySelector(".burger-div3")
 
 let menuOpacity = window.getComputedStyle(slideMenu);
 
+let vw = window.innerWidth;
+
 function toggleMenu() {
     if (menuOpacity.opacity === "0") {
         slideMenu.classList.add("show");
@@ -95,7 +97,7 @@ function toggleMenu() {
 }
 
 function burgerBackground() {
-    if (document.documentElement.scrollTop === 0){
+    if (document.documentElement.scrollTop === 0 && vw > 470){
         burger.style.background = "rgb(255, 255, 255, 0)";
     } else {
         burger.style.background = "rgb(255, 255, 255)";
