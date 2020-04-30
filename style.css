@@ -1543,6 +1543,28 @@ footer section {
     .lip-banner {
         display: none;
     }
+
+    .contact-banner {
+        display: none;
+    }
+
+    .contact-main {
+        text-align: center;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        margin: 0 auto 100px;
+    }
+
+    .contact-content {
+        width: 90%;
+    }
+
+    #map {
+        width: 90%;
+    }
     
 }
 
@@ -1886,6 +1908,15 @@ footer section {
 
     .dermal-header {
         margin-top: 0;
+    }
+
+    #map {
+        width: 90%;
+        margin-top: 40px;
+    }
+
+    .contact-content h2 {
+        font-size: 16px;
     }
 }
 
