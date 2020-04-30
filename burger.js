@@ -32,7 +32,7 @@ function toggleMenu() {
 }
 
 function burgerBackground() {
-    if (document.documentElement.scrollTop === 0 && vw > 470){
+    if (document.documentElement.scrollTop === 0){
         burger.style.background = "rgb(255, 255, 255, 0)";
     } else {
         burger.style.background = "rgb(255, 255, 255)";
