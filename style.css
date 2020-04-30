@@ -270,7 +270,7 @@ a {
     width: 102px;
     height: 66px;
     z-index: 200;
-    display: block;
+    display: none;
 }
 
 .main {
@@ -797,7 +797,6 @@ footer section {
     background-color: rgb(254, 254, 254);
     z-index: 190;
     border-top: 2px solid rgb(112, 112, 112);
-    border-bottom: 2px solid rgb(112, 112, 112);
 }
 
 #treatments-cover {
@@ -1244,6 +1243,7 @@ footer section {
     display: flex;
     margin-left: 100px;
     height: 400px;
+    margin-bottom: 200px;
 }
 
 .contact-content {
@@ -1499,6 +1499,8 @@ footer section {
 }
 
 @media only screen and (max-width: 768px) {
+
+
     .button {
         top: 430px;
     }
@@ -1545,9 +1547,21 @@ footer section {
         font-size: 40px;
         color: black;
     }
+
+    #treatments-cover {
+        background-image: url("imgs/treatments-tablet.png");
+        background-size: contain;
+    }
+
+    .treatments-main {
+    }
 }
 
 @media only screen and (max-width: 425px) {
+
+    #home-arrow-mobile {
+        display: block;
+    }
     
     .navbar {
         display: none;
@@ -1558,7 +1572,7 @@ footer section {
     }
 
     .burger-menu {
-        left: 20px;
+        left: 10px;
     }
 
     .slide-menu {
@@ -1576,31 +1590,33 @@ footer section {
 
     #home-arrow-mobile {
         display: block;
-        top: 56vh;
+        top: 90vh;
     }
 
     #landing {
         background-image: url("imgs/mobile-banner.png");
+        background-size: cover;
     }
 
     .main {
-        margin-top: 60vh;
+        margin-top: 95vh;
     }
 
     .button {
-        top: 335px;
+        position: relative;
+        top: 73vh;
         width: 330px;
         height: 73px;
         left: 50%;
-        margin-left: -175px;
-        background-color: rgba(255, 255, 255, 0.89);
-        color: black;
-        border: 1px solid black;
+        margin-left: -165.5px;
+        background-color: #65CDCD;
+        border: 4px solid #4B4B4B;
     }
 
     .button p {
-        color: black;
+        color: white;
         margin: 0;
+        font-weight: 600;
     }
 
     .button img {
@@ -1745,9 +1761,37 @@ footer section {
     #footer-note {
         font-size: 13px;
     }
+
+    #treatments-cover {
+        background-image: url("imgs/treatments-mobile.png");
+        background-size: cover;
+    }
+
+    .treatments-main {
+        margin-top: 95vh;
+    }
+
+    #treatments-h1 {
+        text-align: center;
+        font-size: 26px;
+    }
+
+    #treatments-text-container {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .overlay {
+        display: none;
+    }
     
+    #treatments-container img {
+        width: 90%;
+    }
+
+    .image {
+        width: 100%;
+    }
 }
 
-@media only screen and (max-width: 425px) {
-
-}
