@@ -1101,6 +1101,7 @@ footer section {
 .book-background-tablet {
     width: 100%;
     height: auto;
+    display: none;
 }
 
 .form-container h3 {
@@ -1524,6 +1525,10 @@ footer section {
     .book-banner {
         padding-bottom: 30px;
         height: 150px;
+    }
+
+    .book-background-tablet {
+        display: block;
     }
 
     .book-title {
