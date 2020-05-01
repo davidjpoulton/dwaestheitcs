@@ -1080,7 +1080,17 @@ footer section {
     top: 1vh;
 }
 
-.book-container h3 {
+.book-background {
+    width: 100%;
+    height: auto;
+}
+
+.book-background-tablet {
+    width: 100%;
+    height: auto;
+}
+
+.form-container h3 {
     position: relative;
     top: 60px;
     left: 70px;
@@ -1091,7 +1101,7 @@ footer section {
     transform: rotate(-5deg);
 }
 
-.book-container h1 {
+.form-container h1 {
     position: relative;
     top: 50px;
     left: 150px;
@@ -1565,7 +1575,69 @@ footer section {
     #map {
         width: 90%;
     }
+
+    .book-container {
+        position: static;
+        width: 100%;
+        height: 100%;
+        background-image: url("imgs/tablet-book.png");
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .form-container {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .form-container h1 {
+        position: static;
+    }
+
+    .form-container h3 {
+        left: -200px;
+    }
     
+    .book-form {
+        position: static;
+        width: 70%;
+        height: 380px;
+    }
+
+    .booking-other-section {
+        position: static;
+        margin: 100px 0;
+    }
+
+    .book-background {
+        display: none;
+    }
+
+    #message-input {
+        width: 100%;
+    }
+
+    .form-half-box {
+        width: 100%;
+        flex-wrap: wrap;
+        padding-left: 0;
+        flex-direction: column;
+    }
+
+    .form-half-box input {
+        width: 100%;
+    }
+
+    .booking-other-section {
+        margin-top: 200px;
+
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -1917,6 +1989,40 @@ footer section {
 
     .contact-content h2 {
         font-size: 16px;
+    }
+
+    .book-form {
+        position: static;
+        width: 80%;
+        height: 380px;
+    }
+
+    .form-container {
+        top: 0;
+        left: 0;
+    }
+
+    .form-container h1 {
+        font-size: 28px;
+    }
+
+    .form-container h3 {
+        font-size: 22px;
+        left: -100px;
+        top: 35px;
+    }
+
+    .booking-other-section {
+        margin-top: 200px;
+        position: static;
+    }
+
+    .booking-other-title {
+        text-align: center;
+        font-size: 18px;
+        width: 90%;
+        margin: 0 auto;
+        letter-spacing: 3px;
     }
 }
 
